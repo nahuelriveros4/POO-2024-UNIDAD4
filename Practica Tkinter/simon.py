@@ -5,6 +5,8 @@ import time
 import winsound
 from VentanaNom import VentanaNombre
 from menuopcion import MenuOpcion
+from classJugador import Jugador
+from ManejadorJugadores import ManejadorJugador
 class Simon:
     def __init__(self,nombre_jugador):
         self.ventana=Tk()        
@@ -14,12 +16,13 @@ class Simon:
         self.contador = 0
         self.juegoI = False
         self.nombre_jugador = nombre_jugador
+        self.jugadores = []  # Lista para almacenar los jugadores
         self.ventana.title("Simon - {}".format(self.nombre_jugador))
         self.colores = ["Azul","Amarillo","Verde","Rojo"]
         self.ventana.title("Simon")
         self.ventana.geometry("400x400")
 
-        MenuOpcion(self.ventana)
+        MenuOpcion(self.ventana,self.jugadores)
 
         self.iniciarBotones()
         self.ventana.mainloop()
@@ -42,6 +45,7 @@ class Simon:
 
         self.etiqueta = Label(self.ventana,text="Marcador: 0 Record : 0" )
         self.etiqueta.place(x=40,y=40)
+        
         # Mostrar nombre del jugador
         self.etiqueta_nombre = Label(self.ventana, text="Jugador: {}".format(self.nombre_jugador))
         self.etiqueta_nombre.place(x=40, y=20)

@@ -1,10 +1,12 @@
 import tkinter as tk
 from tkinter import *
 from tkinter import ttk, font
+from listaJugadores import RankingJugadores
 
 class MenuOpcion:
-    def __init__(self, ventana):
+    def __init__(self, ventana,jugadores):
         self.ventana = ventana
+        self.jugadores = jugadores
         self.fuente = font.Font(weight="normal")
         barraMenu = Menu(self.ventana)
         menuPuntajes = Menu(barraMenu, tearoff=0)
@@ -16,4 +18,4 @@ class MenuOpcion:
         self.ventana.config(menu=barraMenu)
 
     def puntajes(self):
-        print("Ver Puntajes")
+        RankingJugadores(self.jugadores)
