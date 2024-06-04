@@ -4,6 +4,7 @@ import random
 import time
 import winsound
 from VentanaNom import VentanaNombre
+from menuopcion import MenuOpcion
 class Simon:
     def __init__(self,nombre_jugador):
         self.ventana=Tk()        
@@ -17,6 +18,9 @@ class Simon:
         self.colores = ["Azul","Amarillo","Verde","Rojo"]
         self.ventana.title("Simon")
         self.ventana.geometry("400x400")
+
+        MenuOpcion(self.ventana)
+
         self.iniciarBotones()
         self.ventana.mainloop()
 
@@ -59,7 +63,11 @@ class Simon:
                     self.revisarTurno()
                     self.etiqueta.config(text=" Marcador : " + str(self.marcador) + " Record : " + str(self.mayor))
                 else:
-                    messagebox.showinfo("GAME OVER", "Tu puntuación: " + str(self.marcador) + "\nRecord: " + str(self.mayor))
+                    if self.marcador > self.mayor:
+                        messagebox.showinfo("GAME OVER", "Tu puntuación: " + str(self.marcador) + "\nRecord: " + str(self.marcador))
+                    else:
+                        messagebox.showinfo("GAME OVER", "Tu puntuación: " + str(self.marcador) + "\nRecord: " + str(self.mayor))
+
                     if self.marcador > self.mayor:
                         self.mayor = self.marcador
                     self.etiqueta.config(text=" Marcador : " + str(self.marcador) + " Record : " + str(self.mayor))
