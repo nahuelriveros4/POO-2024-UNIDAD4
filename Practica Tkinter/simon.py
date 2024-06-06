@@ -20,9 +20,9 @@ class Simon:
         self.juegoI = False
         self.colores = ["Azul","Amarillo","Verde","Rojo"]
         self.ventana.title("Simon")
-        self.ventana.geometry("400x400")
+        self.ventana.geometry("300x400")
         self.lista = repositorio.obtenerListaJugadores()
-        self.ventana.title("Simon - {}".format(self.nombre_jugador))
+        self.ventana.title(f"Simon - {self.nombre_jugador}")
         self.menu = MenuOpcion(self.ventana, self.lista)
         
         self.iniciarBotones()
@@ -30,26 +30,25 @@ class Simon:
 
 
     def iniciarBotones(self):
-        self.botonAzul = Button(self.ventana,command=lambda:self.presionar("Azul"), height=6,width=13,bg="blue")
-        self.botonAzul.place(x=100,y=100)
+        self.botonAzul = Button(self.ventana,command=lambda:self.presionar("Azul"), height=8,width=13,bg="blue")
+        self.botonAzul.place(x=45,y=100)
 
-        self.botonVerde = Button(self.ventana,command=lambda:self.presionar("Verde"), height=6,width=13,bg="green")
-        self.botonVerde.place(x=200,y=100)
+        self.botonVerde = Button(self.ventana,command=lambda:self.presionar("Verde"), height=8,width=13,bg="green")
+        self.botonVerde.place(x=155,y=100)
         
-        self.botonAmarillo = Button(self.ventana,command=lambda:self.presionar("Amarillo"), height=6,width=13,bg="yellow")
-        self.botonAmarillo.place(x=100,y=200)
+        self.botonAmarillo = Button(self.ventana,command=lambda:self.presionar("Amarillo"), height=8,width=13,bg="yellow")
+        self.botonAmarillo.place(x=45,y=240)
 
-        self.botonRojo = Button(self.ventana,command=lambda:self.presionar("Rojo"), height=6,width=13,bg="red")
-        self.botonRojo.place(x=200,y=200)
+        self.botonRojo = Button(self.ventana,command=lambda:self.presionar("Rojo"), height=8,width=13,bg="red")
+        self.botonRojo.place(x=155,y=240)
 
         self.botonIniciar = Button(self.ventana,command=self.iniciar,height=2,width=6,bg="white",text="Iniciar")
-        self.botonIniciar.place(x=175,y=40)
+        self.botonIniciar.place(x=200,y=20)
 
         self.etiqueta = Label(self.ventana,text="Marcador: 0 Record : 0" )
         self.etiqueta.place(x=40,y=40)
         
-        # Mostrar nombre del jugador
-        self.etiqueta_nombre = Label(self.ventana, text="Jugador: {}".format(self.nombre_jugador))
+        self.etiqueta_nombre = Label(self.ventana, text=f"Jugador: {self.nombre_jugador}")
         self.etiqueta_nombre.place(x=40, y=20)
 
     def iniciar(self):
@@ -133,7 +132,6 @@ class Simon:
 
 
     def registrar_puntaje(self,puntaje):
-        # Método para registrar el puntaje del jugador en el repositorio
         ahora = datetime.now()
         fecha = ahora.strftime("%d/%m/%Y")
         hora_actual = ahora.strftime("%H:%M:%S")
