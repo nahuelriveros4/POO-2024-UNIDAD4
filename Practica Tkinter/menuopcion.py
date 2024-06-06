@@ -19,3 +19,6 @@ class MenuOpcion:
 
     def puntajes(self):
         RankingJugadores(self.jugadores)
+
+
+

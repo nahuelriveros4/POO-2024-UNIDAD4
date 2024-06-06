@@ -13,11 +13,13 @@ class VentanaNombre:
         self.entry_nombre = Entry(self.ventana)
         self.entry_nombre.pack()
 
-        self.boton_ingresar = Button(self.ventana, text="Iniciar Juago", command=self.obtenerNombre)
+        self.boton_ingresar = Button(self.ventana, text="Iniciar Juego", command=self.obtenerNombre)
         self.boton_ingresar.pack()
-
+        
         self.ventana.mainloop()
-
+        
     def obtenerNombre(self):
         self.nombre_jugador = self.entry_nombre.get()
         self.ventana.destroy()
+
+

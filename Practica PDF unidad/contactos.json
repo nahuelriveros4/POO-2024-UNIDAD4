@@ -1,0 +1,14 @@
+{
+    "__class__": "ManejadorContactos",
+    "__contactos__": [
+        {
+            "__class__": "Contacto",
+            "__atributos__": {
+                "apellido": "Perez",
+                "nombre": "Juan",
+                "email": "juan.perez@example.com",
+                "telefono": "(264)154530528"
+            }
+        }
+    ]
+}

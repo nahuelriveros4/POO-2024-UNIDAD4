@@ -1,0 +1,23 @@
+{
+    "__class__": "ManejadorJugador",
+    "jugadores": [
+        {
+            "__class__": "Jugador",
+            "__atributos__": {
+                "nombre": "Nahuel",
+                "fecha": "06/06/2024",
+                "hora": "02:26:20",
+                "puntaje": 1
+            }
+        },
+        {
+            "__class__": "Jugador",
+            "__atributos__": {
+                "nombre": "Nahuel",
+                "fecha": "06/06/2024",
+                "hora": "02:26:20",
+                "puntaje": 1
+            }
+        }
+    ]
+}

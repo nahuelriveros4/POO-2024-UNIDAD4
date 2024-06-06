@@ -12,6 +12,7 @@ class RepositorioJugadores(object):
     def obtenerListaJugadores(self):
         return self.__manejador.getListaJugadores()
     
+    
     def agregarJugador(self, jugador):
         self.__manejador.agregarJugador(jugador)
         return jugador
