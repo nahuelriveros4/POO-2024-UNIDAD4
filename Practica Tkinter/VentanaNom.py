@@ -15,7 +15,6 @@ class VentanaNombre:
 
         self.boton_ingresar = Button(self.ventana, text="Iniciar Juego", command=self.obtenerNombre)
         self.boton_ingresar.pack()
-        
         self.ventana.mainloop()
         
     def obtenerNombre(self):
