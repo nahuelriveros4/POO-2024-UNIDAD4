@@ -71,7 +71,7 @@ class Simon:
                 if color in color_map:
                     boton, color1, color2, tiempo_encendido, tiempo_apagado = color_map[color]
                     self.cambio(boton, color1, color2, tiempo_encendido, tiempo_apagado)
-                    time.sleep(0.05)
+                    time.sleep(0.5)
 
             aleatorio = random.choice(self.colores)
             self.arreglo.append(aleatorio)
@@ -112,7 +112,7 @@ class Simon:
         if len(self.arreglo) == self.contador:
             self.contador = 0
             self.marcador += 1
-            self.botonIniciar.after(100,self.crearColor)
+            self.botonIniciar.after(500,self.crearColor)
 
     def sonido(self,frecuencia,duracion):
         winsound.Beep(frecuencia,duracion)
