@@ -1,0 +1,104 @@
+{
+    "__class__": "ManejadorJugador",
+    "jugadores": [
+        {
+            "__class__": "Jugador",
+            "__atributos__": {
+                "nombre": "Nahuel",
+                "fecha": "06/06/2024",
+                "hora": "21:13:22",
+                "puntaje": 4
+            }
+        },
+        {
+            "__class__": "Jugador",
+            "__atributos__": {
+                "nombre": "Nahuel2",
+                "fecha": "06/06/2024",
+                "hora": "21:14:16",
+                "puntaje": 1
+            }
+        },
+        {
+            "__class__": "Jugador",
+            "__atributos__": {
+                "nombre": "Pedro",
+                "fecha": "07/06/2024",
+                "hora": "09:45:32",
+                "puntaje": 4
+            }
+        },
+        {
+            "__class__": "Jugador",
+            "__atributos__": {
+                "nombre": "Nahuel",
+                "fecha": "07/06/2024",
+                "hora": "12:30:04",
+                "puntaje": 3
+            }
+        },
+        {
+            "__class__": "Jugador",
+            "__atributos__": {
+                "nombre": "brisa",
+                "fecha": "09/06/2024",
+                "hora": "22:10:59",
+                "puntaje": 10
+            }
+        },
+        {
+            "__class__": "Jugador",
+            "__atributos__": {
+                "nombre": "brisa",
+                "fecha": "09/06/2024",
+                "hora": "22:12:48",
+                "puntaje": 2
+            }
+        },
+        {
+            "__class__": "Jugador",
+            "__atributos__": {
+                "nombre": "ss",
+                "fecha": "23/06/2024",
+                "hora": "21:38:13",
+                "puntaje": 0
+            }
+        },
+        {
+            "__class__": "Jugador",
+            "__atributos__": {
+                "nombre": "ss",
+                "fecha": "23/06/2024",
+                "hora": "21:38:16",
+                "puntaje": 0
+            }
+        },
+        {
+            "__class__": "Jugador",
+            "__atributos__": {
+                "nombre": "ss",
+                "fecha": "23/06/2024",
+                "hora": "21:38:18",
+                "puntaje": 0
+            }
+        },
+        {
+            "__class__": "Jugador",
+            "__atributos__": {
+                "nombre": "ss",
+                "fecha": "23/06/2024",
+                "hora": "21:38:25",
+                "puntaje": 0
+            }
+        },
+        {
+            "__class__": "Jugador",
+            "__atributos__": {
+                "nombre": "sd",
+                "fecha": "23/06/2024",
+                "hora": "21:39:06",
+                "puntaje": 3
+            }
+        }
+    ]
+}
